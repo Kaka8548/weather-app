@@ -1,0 +1,95 @@
+.card {
+  background: linear-gradient(to top, #fff9eb 0%, #ace0f9 100%);
+  padding: 30px;
+  margin: 40px auto;
+  width: 100%;
+  max-width: 600px;
+  min-width: 500px;
+}
+
+.search {
+  margin-bottom: 25px;
+}
+
+.input {
+  padding: 5px 10px;
+  border-radius: 20px;
+  width: 50%;
+  background: #fff;
+  border: 1px solid #000;
+  font-size: 14px;
+  font-family: "Roboto Flex", sans-serif;
+  font-style: italic;
+}
+
+.srch-btn,
+.crnt-btn {
+  font-size: 14px;
+  color: #fff;
+  padding: 5px 15px;
+  border-radius: 20px;
+  font-family: "Roboto Flex", sans-serif;
+  background: #000;
+  border: 1px solid #000;
+}
+
+.srch-btn:hover,
+.crnt-btn:hover {
+  background: rgba(0, 0, 0, 0.667);
+  border: 1px solid rgba(0, 0, 0, 0.667);
+}
+
+.today {
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 20px;
+  background: rgba(0, 0, 0, 0.05);
+}
+
+.today img {
+  width: 65px;
+}
+
+h1,
+#temp {
+  font-size: 27px;
+  font-family: "Staatliches", cursive;
+  margin-right: 10px;
+}
+
+#cels-far {
+  font-size: 16px;
+  font-family: "Roboto Flex", sans-serif;
+}
+
+#cels,
+#far {
+  text-decoration: none;
+}
+
+#cels:hover,
+#far:hover {
+  text-decoration: underline;
+}
+
+p {
+  font-family: "Roboto Flex", sans-serif;
+  font-style: italic;
+  margin: 0;
+}
+
+.week {
+  padding: 20px;
+  border-radius: 20px;
+  background: rgba(0, 0, 0, 0.05);
+}
+
+.week .day {
+  text-align: center;
+}
+
+.wkday {
+  font-size: 18px;
+  font-weight: 500;
+  font-style: normal;
+}
