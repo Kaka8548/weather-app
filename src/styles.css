@@ -1,10 +1,14 @@
-.card {
-  background: linear-gradient(to top, #fff9eb 0%, #ace0f9 100%);
-  padding: 30px;
-  margin: 40px auto;
+.container {
   width: 100%;
   max-width: 600px;
   min-width: 500px;
+  padding: 0;
+}
+
+.card {
+  background: linear-gradient(to top, #fff9eb 0%, #ace0f9 100%);
+  padding: 30px;
+  margin: 40px auto 15px;
 }
 
 .search {
