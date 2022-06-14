@@ -78,7 +78,6 @@ let celSiusTemperature = null;
 //Change celcium or fahreinheit temp
 let cels = document.querySelector("#cels");
 let far = document.querySelector("#far");
-cels.addEventListener("click", getCelsTemp);
 far.addEventListener("click", getFarTemp);
 
 /*function getCelsTemp(event) {
