@@ -66,6 +66,15 @@ h1,
   font-family: "Roboto Flex", sans-serif;
 }
 
+#cels-far .active {
+  color: black;
+}
+
+#cels-far .active:hover {
+  text-decoration: none;
+  cursor: default;
+}
+
 #cels,
 #far {
   text-decoration: none;
