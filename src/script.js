@@ -28,6 +28,8 @@ function showTemp(response) {
   showTemperature.innerHTML = `${temp}°C`;
   let city = document.querySelector("h1");
   city.innerHTML = `${cityName}, ${countryName}`;
+
+  celSiusTemperature = response.data.main.temp;
 }
 
 function searchCity(event) {
@@ -71,22 +73,23 @@ currentButton.addEventListener("click", currentLocation);
 let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=Kyiv&appid=fb7cdde54d32ea9c336c56bdf8dda6ee&units=metric`;
 axios.get(apiUrl).then(showTemp);
 
-/*Change celcium or fahreinheit temp 
+let celSiusTemperature = null;
 
-  function getCelsTemp(event) {
-    event.preventDefault();
-    let CelsTemp = document.querySelector("#temp");
-    CelsTemp.innerHTML = `${temp}°C`;
-  }
+//Change celcium or fahreinheit temp
+let cels = document.querySelector("#cels");
+let far = document.querySelector("#far");
+cels.addEventListener("click", getCelsTemp);
+far.addEventListener("click", getFarTemp);
 
-  function getFarTemp(event) {
-    event.preventDefault();
-    let FarTemp = document.querySelector("#temp");
-    FarTemp.innerHTML = `${Math.round(temp * 1.8 + 32)}°F`;
-  } 
+function getCelsTemp(event) {
+  event.preventDefault();
+  let CelsTemp = document.querySelector("#temp");
+  CelsTemp.innerHTML = celSiusTemperature * 1.8 + 32;
+}
 
-  let cels = document.querySelector("#cels");
-  let far = document.querySelector("#far");
-  cels.addEventListener("click", getCelsTemp);
-  far.addEventListener("click", getFarTemp);
-} */
+/*function getFarTemp(event) {
+  event.preventDefault();
+  let FarTemp = document.querySelector("#temp");
+  FarTemp.innerHTML = `${Math.round(temp * 1.8 + 32)}`;
+}
+*/
