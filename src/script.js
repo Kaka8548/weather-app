@@ -91,5 +91,5 @@ function getFarTemp(event) {
   event.preventDefault();
   //let FarTemp = document.querySelector("#temp");
   //FarTemp.innerHTML = 1 * 1.8 + 32;
-  alert(hi);
+  alert("hi");
 }
