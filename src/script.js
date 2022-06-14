@@ -90,5 +90,5 @@ far.addEventListener("click", getFarTemp);
 function getFarTemp(event) {
   event.preventDefault();
   let FarTemp = document.querySelector("#temp");
-  FarTemp.innerHTML = celSiusTemperature * 1.8 + 32;
+  FarTemp.innerHTML = 1 * 1.8 + 32;
 }
