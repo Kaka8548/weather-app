@@ -81,15 +81,14 @@ let far = document.querySelector("#far");
 cels.addEventListener("click", getCelsTemp);
 far.addEventListener("click", getFarTemp);
 
-function getCelsTemp(event) {
+/*function getCelsTemp(event) {
   event.preventDefault();
   let CelsTemp = document.querySelector("#temp");
-  CelsTemp.innerHTML = celSiusTemperature * 1.8 + 32;
-}
+  CelsTemp.innerHTML = 
+}*/
 
-/*function getFarTemp(event) {
+function getFarTemp(event) {
   event.preventDefault();
   let FarTemp = document.querySelector("#temp");
-  FarTemp.innerHTML = `${Math.round(temp * 1.8 + 32)}`;
+  FarTemp.innerHTML = celSiusTemperature * 1.8 + 32;
 }
-*/
